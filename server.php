@@ -54,7 +54,7 @@ class Server{
 				$current_hash = md5_file('Latest_plane_crash.html');
 				if ($current_hash != $_POST['hash']) {
 					//TODO redirect here
-					echo "you need to download your file again as it has been changed".
+					echo "you need to download your file again as it has been changed";
 				}
 				$contents = $_POST['contents'];
 				fwrite($article, $contents);
